@@ -32,7 +32,7 @@ if 'settings' not in st.session_state:
     st.session_state['settings'] = {}
 
 # App layout
-tab1, tab2, tab3, tab4 = st.tabs(["Have a conversation", "Internet search", "Create your Assistant", "Settings"])
+tab1, tab2 = st.tabs(["Have a conversation", "Internet search"])
 
 # Have a conversation tab
 with tab1:
@@ -52,16 +52,6 @@ with tab2:
     unique_searches.insert(0,'')
     initial_search = st.selectbox('Search history', unique_searches, index=0)
     search = st.container()
-
-with tab3:
-    st.write("<span style='font-size:2em'>Comming soon...</span>", unsafe_allow_html=True)
-    st.write("In this page you will be able to create custom Assistant archetypes.")
-
-with tab4:
-    #logout_button()
-    reset_key_button()
-    #delete_history_button()
-    #delete_user_button()
 
 # Google search section
 with search:
