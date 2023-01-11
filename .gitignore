@@ -1,0 +1,8 @@
+ideas.txt
+api_key.txt
+venv
+search_history.pickle
+.streamlit
+__pycache__
+deta
+test.py
