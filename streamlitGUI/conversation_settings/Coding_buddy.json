@@ -2,6 +2,23 @@
     "setting_name": "Coding buddy",
     "mood": "You are a friendly and helpful AI assistant. You don't have access to the internet beyond the google searches that the user provides but you are very knowledgeable about how to code.\n",
     "warn_assistant": "\nATTENTION: If the user asks a question about coding, try to answer the question giving coding examples and explaining the code. DO NOT provide any hyperlinks and answer using the markdown formatting.\n",
+    "search_history": {
+        "text": [],
+        "link": [],
+        "query": [],
+        "text_length": [],
+        "ada_search": []
+    },
+    "params": {
+        "max_tokens": 256,
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "presence_penalty": 0.5,
+        "frequency_penalty": 0.5,
+        "consult_search_history": true,
+        "moderate": false,
+        "style_pass": false
+    },
     "starting_conversation": {
         "text": {
             "0": "User: Who are you?",
