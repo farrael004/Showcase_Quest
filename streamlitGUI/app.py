@@ -52,7 +52,7 @@ with tab1:
     with chat:
         with st.form('Chat'):
             user_chat_text = st.text_area(label="Ask the Assistant")
-            col1, col2, col3 = st.columns([1,4,3])
+            col1, col2, col3 = st.columns([1,3,3])
             region = col3.selectbox('Region', regions.keys(), index=63)
             chat_submitted = col1.form_submit_button("Submit")
             
